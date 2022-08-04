@@ -114,6 +114,12 @@ overflow: hidden;
 
 }
 
+.contactinfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
 .container .right_side
 {
     position: relative;
