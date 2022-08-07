@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap')
-*
-{
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap') * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Slabo 27px', serif;
 }
-body
-{
+
+body {
     background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.container
-{
+
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -23,35 +21,35 @@ body
     background: #fff;
     margin: 50px;
     display: grid;
-    grid-template-columns:1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-.container .left_side
-{
+
+.container .left_side {
     position: relative;
     background: #003147;
     padding: 40px;
 
 }
-.profiletext
-{
+
+.profiletext {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.profiletext .imgBx
-{
-position: relative;
-width: 200px;
-height: 200px;
-border-radius: 50%;
-overflow: hidden;
+
+.profiletext .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
 }
-.profiletext .imgBx img
-{
+
+.profiletext .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,8 +58,8 @@ overflow: hidden;
     object-fit: cover;
 
 }
-.profiletext h2
-{
+
+.profiletext h2 {
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
@@ -71,19 +69,16 @@ overflow: hidden;
     line-height: 1.4em;
 }
 
-.profiletext h2 span
-{
+.profiletext h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
 
-.contactinfo
-{
+.contactinfo {
     padding-top: 40px;
 }
 
-.title
-{
+.title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -91,13 +86,11 @@ overflow: hidden;
     margin-bottom: 20px;
 }
 
-.contactinfo ul
-{
+.contactinfo ul {
     position: relative;
 }
 
-.contactinfo ul li
-{
+.contactinfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
@@ -105,8 +98,7 @@ overflow: hidden;
 
 }
 
-.contactinfo ul li .icon
-{
+.contactinfo ul li .icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
@@ -114,16 +106,138 @@ overflow: hidden;
 
 }
 
-.contactinfo ul li span
-{
+.contactinfo ul li span {
     color: #fff;
     font-weight: 300;
 }
 
-.container .right_side
-{
+.contactinfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactinfo.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+
+}
+
+.contactinfo.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactinfo.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactinfo.languages .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.contactinfo.languages .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.container .right_side {
     position: relative;
     background: #fff;
     padding: 40px;
-    
+
 }
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+.title2 {
+    color: #034147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p {
+    color: #333;   
+
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    columns: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box {
+position: relative;
+width: 100%;
+display: grid;  
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+}
+
+.skills h4 {
+    text-transform: uppercase;
+    columns: #848c99;  
+    font-weight: 500;
+}
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+color: #03a9f4;
+font-size: 18px;
+width: 20px;
+
+}
+
